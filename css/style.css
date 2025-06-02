@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 0px;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul {
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+nav > ul > li {
+  cursor: pointer;
+  list-style: none;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+.btn {
+  display: flex;
+  gap: 15px;
+}
+.btn > button {
+  padding: 1.5rem 4rem;
+  border-radius: 40px;
+  border: none;
+  background-color: #6656ff;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.signin:hover {
+  color: #6556ff !important;
+  background-color: rgba(101, 86, 255, 0.15) !important;
+}
+.signup {
+  color: #6556ff !important;
+  background-color: rgba(101, 86, 255, 0.15) !important;
+}
+.signup:hover {
+  background-color: #6556ff !important;
+  color: white !important;
+}
+
+/* main starts */
+main {
+  background-color: #f6f9fe;
+  width: 100%;
+}
+.hero {
+  padding: 2rem 0;
+  display: flex;
+}
+.discount {
+  display: flex;
+  gap: 20px;
+}
+.discount > p {
+  color: #43c639;
+  font-weight: 600;
+}
+.svg-tick {
+  width: 20px;
+}
+.search-form {
+  background-color: white;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchcourse {
+  text-indent: 30px;
+  border: none;
+  height: 7em;
+  width: 38em;
+  border-radius: 40px;
+}
+.searchcourse::placeholder {
+  font: 1.25rem/3 sans-serif;
+}
+.advantage {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.advantage-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.advantage-item > img {
+  width: 30px;
+}
+.advantage-item > p {
+  font-weight: 500;
+  font-size: 18px;
+}
+.left-hero {
+  padding: 50px 0px;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.left-hero > h1 {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 600;
+}
+.left-hero > .Buildskills {
+  font-size: 18px;
+}
+.left-hero,
+.right-hero {
+  width: 50%;
+}
+.right-hero > img {
+  width: 100%;
+}
+.p-5 {
+  padding: 1.5rem;
+}
+.rounded-full {
+  border-radius: 50%;
+  border: none;
+  background-color: #1b23be;
+  color: white;
+}
+.rounded-full > svg {
+  font-size: 20px;
+}
+.shadow {
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  .left-hero,
+  .right-hero {
+    width: 100%;
+  }
+  nav{
+    flex-direction: column;
+    align-items: center;
+  }
+    nav > ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+  .left-hero > h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .left-hero > .Buildskills {
+    font-size: 16px;
+  }
+  .searchcourse {
+    width: 100%;
+    height: 5em;
+    text-indent: 20px;
+    font-size: 1.1rem;
+  }
+    
+}
