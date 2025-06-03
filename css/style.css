@@ -161,21 +161,19 @@ main {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
-
-
 @media screen and (max-width: 768px) {
   .left-hero,
   .right-hero {
     width: 100%;
   }
-  nav{
+  nav {
     flex-direction: column;
     align-items: center;
   }
-    nav > ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+  nav > ul {
+    flex-direction: column;
+    gap: 10px;
+  }
   .left-hero > h1 {
     font-size: 30px;
     line-height: 30px;
@@ -189,5 +187,85 @@ main {
     text-indent: 20px;
     font-size: 1.1rem;
   }
-    
+}
+/* footer starts */
+footer {
+  width: 90%;
+}
+.trust {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.marquee {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f9fe;
+}
+hr {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 150px 0px;
+}
+.footer-links > p {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.footer-links > a {
+  text-decoration: none;
+  color: #6a5af7;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.image1 {
+  margin-left: 50px;
+  margin-right: 20px;
+}
+.image2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.image3 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.img {
+  margin-bottom: 60px;
+}
+div.background {
+  background-color: #d4effa;
+  position: relative;
+  left: -5vw; /* offset half of the 10% (100% - 90%) */
+  width: 99vw; /* use viewport width to get full body width */
+}
+div.background > p {
+  font-size: 60px;
+  font-weight: 600;
+  padding: 80px 50px;
+}
+div.mentor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+  gap: 100px;
+}
+.footer-image {
+  margin-right: 500px;
 }
